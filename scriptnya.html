@@ -56,7 +56,7 @@ document.getElementById("bq").onclick = function() {
       }
       kalimat.innerHTML="";
   	new TypeIt("#kalimat", {
-      strings: ["" + pesanAkhir1], startDelay: 10, speed: 10, cursor: true,
+      strings: ["" + pesanAkhir1], startDelay: 10, speed: 19, cursor: true,
       afterComplete: function(){
          kalimat.innerHTML = pesanAkhir1;
          munculkembali();
@@ -67,7 +67,7 @@ document.getElementById("bq").onclick = function() {
   setInterval(berjatuhan,250);
   pesanAkhir.style="position:relative;opacity:1;visibility:visible;transform: scale(1)";
   new TypeIt("#pesanAkhir", {
-  strings: ["" + pesanAkhir3], startDelay: 100, speed: 10, cursor: false, deleteSpeed: 20, breakLines: false, waitUntilVisible: true, lifelike: true,
+  strings: ["" + pesanAkhir3], startDelay: 100, speed: 19, cursor: false, deleteSpeed: 20, breakLines: false, waitUntilVisible: true, lifelike: true,
   afterComplete: function(){
   	 pesanAkhir.style.animation="rto .8s infinite alternate";
        setTimeout(tombol,700);
